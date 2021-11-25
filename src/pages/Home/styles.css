@@ -1,0 +1,12 @@
+.container-home{
+    background: var(--color-verde-claro);
+    height: 600px;
+}
+
+.container-home div{
+    margin: 5% 0 0 5%;
+    width: 90%;
+    height: 145px;
+    border-radius: 10px;
+    background: var(--color-verde-medio);
+}

@@ -1,0 +1,10 @@
+.container-exercicio{
+    background: var(--color-verde-claro);
+    height: 600px;
+}
+
+.input-escuro{
+    background: var(--color-verde-medio)!important;
+    width: 100%;
+    margin-bottom: 20px;
+}

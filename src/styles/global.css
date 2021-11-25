@@ -1,0 +1,58 @@
+:root{
+    font-size: 60%;
+
+    --color-verde-button: #2D4B2D;
+    --color-verde-escuro: #548B54;
+    --color-verde-medio: #6CB46C;
+    --color-verde-claro: #96E196;
+    --color-verde-input: #81D781;
+    --color-verde-quase-branco: #C8FFC8;
+    --color-preto: #2F2F2F;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, #root{
+    max-height: 682px;
+    max-width: 450px;
+}
+
+body{
+    color: var(--color-preto);
+}
+
+#root{
+    align-items: center;
+    justify-content: center;
+}
+
+body, input, button, textarea {
+    font: 400 1.4rem Roboto, sans-serif;
+}
+
+label {
+    font: 700 1.4rem Roboto, sans-serif;
+}
+
+input[type=text], input[type=password], input[type=date]{
+    background: var(--color-verde-claro);
+    border: none;
+    color: var(--color-preto);
+    height: 34px;
+    border-radius: 10px;
+    outline: none;
+    padding: 5px;
+}
+
+button{
+    height: 34px;
+    border: none;
+    border-radius: 5px;
+    min-width: 103px;
+    color: var(--color-preto);
+    cursor: pointer;
+}

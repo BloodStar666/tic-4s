@@ -1,0 +1,13 @@
+.container-cadastro{
+    background: var(--color-verde-medio);
+    min-height: 100vh;
+    padding: 20% 15% 15% 10%;
+}
+
+.container-cadastro img{
+    width: 30%;
+    margin: 0 0 50px 35%;
+}
+span{
+    color: rgb(197, 26, 26);
+}

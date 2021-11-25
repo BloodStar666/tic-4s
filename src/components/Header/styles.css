@@ -1,0 +1,27 @@
+.container-header{
+    display: flex;
+    height: 43px;
+    width: 100vw;
+    background: var(--color-verde-claro);
+    cursor: pointer;
+    border-bottom: 1px solid var(--color-verde-medio);
+}
+
+.img-abelha{
+    margin-left: 10px;
+    margin-top: 1px;
+    width: 39px;
+    height: 39px;
+}
+
+.img-profile{
+    margin: 1px 0 0 54%;
+    width: 39px;
+    height: 39px;
+}
+
+.container-nav h1{
+    color: white;
+    font: 700  FiraSans ;
+    margin : 3px 0 0 10px
+}

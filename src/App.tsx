@@ -1,24 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Router, Switch, Route } from "react-router-dom";
 
+import { Login } from './pages/Login/Login';
+import { Cadastro } from './pages/Cadastro/Cadastro';
+import { CronogramaAlimentar } from './pages/CronogramaAlimentar/CronAlimentar';
+import { CronogramaExercicio } from './pages/CronogramaExercicio/CronExercicio';
+import { Exercicio } from './pages/Exercicio/Exercicio';
+import { Home } from './pages/Home/Home';
+
+import history from "./util/history";
+
+import './styles/global.css'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router history={history}>
+        <Switch>
+            <Route component={Login} path="/" exact/>
+            <Route component={Cadastro} path="/cadastro" exact/>
+            <Route component={Home} path="/home" exact/>
+            <Route component={CronogramaAlimentar} path="/cronogramaAlimentar" />
+            <Route component={CronogramaExercicio} path="/cronogramaExercicio" />
+            <Route component={Exercicio} path="/exercicios" />
+        </Switch>
+      </Router>
     </div>
   );
 }
